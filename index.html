@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>eCommerce Quiz</h1>
+    <div class="container">
+        <div class="question-ctr question1 show-active">
+            <h3>Question 1 of 3</h3>
+            <h4>Which of the following is not a real eCommerce platform?</h5>
+            <div class="answer-ctr">
+                <p>
+                    <input type="radio" id="question1a" name="answer1" value="incorrect">
+                    <label for="question1a">Shopify</label>
+                </p>
+                <p>
+                    <input type="radio" id="question1b" name="answer1" value="incorrect">
+                    <label for="question1b">WooCommerce</label>
+                </p>
+                <p>
+                    <input type="radio" id="question1c" name="answer1" value="correct">
+                    <label for="question1c">ShopCommerce</label>
+                </p>
+                <p>
+                    <input type="radio" id="question1d" name="answer1" value="incorrect">
+                    <label for="question1d">BigCommerce</label>
+                </p>
+            </div>
+        </div>
+        <div class="question-ctr question2">
+            <h3>Question 2 of 3</h3>
+            <h4>If Shopify is so good, why are Shopify developers necessary?</h5>
+            <div class="answer-ctr">
+                <p>
+                    <input type="radio" id="question2a" name="answer2" value="incorrect">
+                    <label for="question2a">To save time on things like store setups and migrations</label>
+                </p>
+                <p>
+                    <input type="radio" id="question2b" name="answer2" value="incorrect">
+                    <label for="question2b">To extend the limited design options and functionalities of themes with custom code</label>
+                </p>
+                <p>
+                    <input type="radio" id="question2c" name="answer2" value="incorrect">
+                    <label for="question2c">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+                </p>
+                <p>
+                    <input type="radio" id="question2d" name="answer2" value="correct">
+                    <label for="question2d">All of the above</label>
+                </p>
+            </div>
+        </div>
+        <div class="question-ctr question3">
+            <h3>Question 3 of 3</h3>
+            <h4>Which of the following is true about Shopify developers?</h5>
+            <div class="answer-ctr">
+                <p>
+                    <input type="radio" id="question3a" name="answer3" value="incorrect">
+                    <label for="question3a">They are paid extremely well</label>
+                </p>
+                <p>
+                    <input type="radio" id="question3b" name="answer3" value="incorrect">
+                    <label for="question3b">There is a high demand for them</label>
+                </p>
+                <p>
+                    <input type="radio" id="question3c" name="answer3" value="incorrect">
+                    <label for="question3c">They need to know web development, the platform itself, and the liquid template language</label>
+                </p>
+                <p>
+                    <input type="radio" id="question3d" name="answer3" value="correct">
+                    <label for="question3d">All of the above</label>
+                </p>
+            </div>
+        </div>
+        <button id="next">Next ></button>
+        <button id="previous">< Previous</button>
+        <button id="submit">Submit</button>
+    </div>
+    <div id="results-ctr">
+        <h3>You have answered <span id="score"></span> out of 3 questions correct</h3>
+        <h4>Try Again?</h4>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
